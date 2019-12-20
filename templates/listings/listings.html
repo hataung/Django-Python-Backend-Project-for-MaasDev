@@ -4,6 +4,7 @@
 
 {% block content %}
 
+
 <div class="section-container">
     <div class="container">
         <div class="row section-container-spacer">
@@ -11,6 +12,19 @@
                 <div class="text-center">
                     <h1>Pricing</h1>
                 </div>
+
+                {% if listings %}
+                    {% for listing in listings  %}
+
+                    {% endfor %}
+
+                {% else %}
+
+                    <div class="col-md-12">
+                    <p>No Listings Available</p>
+                    </div>
+                {% endif %} 
+
                 <div class="col-md-8 col-md-offset-2">
                     <p>Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum enim facilisis gravida neque convallis
                         a cras semper auctor. Sit amet risus nullam eget felis eget. Metus dictum at tempor commodo ullamcorper

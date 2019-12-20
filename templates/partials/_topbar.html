@@ -18,12 +18,12 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="{% url 'index' %}" title="" class="active">Home</a></li>
           <li><a href="{% url 'about' %}" title=""> About</a></li>
-          <li><a href="./pricing.html" title=""> Pricing </a></li>
+          <li><a href="{% url 'listings' %}" title=""> Pricing </a></li>
           <li><a href="./contact.html" title="">Contact</a></li>
-          <li><a href="./components.html" title="">Components</a></li>
+          <li><a href="{% url 'register' %}" title="register">Register</a></li>
           <li>
             <p>
-              <a href="./download.html" class="btn btn-primary navbar-btn" title="">Download</a>
+              <a href="{% url 'login' %}" class="btn btn-primary navbar-btn" title="login">User Login</a>
             </p>
           </li>
           
